@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>14. jQuery selected selector</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('#selectCountries').change(function() {
+				var selectedOptions= $('#selectCountries option:selected');
+				if (selectedOptions.length>0) {
+					var resultSting='';
+					selectedOptions.each(function() {
+						resultSting += "Value= "+ $(this).val() + ". Text" + $(this).text() + '<br/>';
+					});
+					
+					$('#divResult').html(resultSting);
+				};
+				
+				
+			});
+
+		});
+	</script>
+
+</head>
+<body>
+	<select name="" id="selectCountries" multiple="multiple">
+		<option selected="selected" value="USA">USA</option> 
+		<option value="IND">IND</option>
+		<option value="UK">UK</option>
+		<option value="CA">CA</option>
+		<option value="AU">AU</option>
+	</select>
+
+	<div id="divResult"></div>
+</body>
+</html>

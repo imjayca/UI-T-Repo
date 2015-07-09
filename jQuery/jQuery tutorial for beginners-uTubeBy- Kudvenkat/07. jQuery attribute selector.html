@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>07. jQuery attribute selector</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+	<script>
+	$(document).ready(function() {
+		// $('[title]').css('border', '1px dotted black');
+		// $('span[title="div1Title"]').css('border', '1px solid red');
+		$('[style="background-color:red"]').css('border', '10px dotted black');
+	});
+
+	</script>
+</head>
+<body>
+ <div title="divTitle" style="background-color:red">
+        Red DIV
+    </div>
+    <br />
+    <div title="divTitle" style="background-color:green">
+        Green DIV
+    </div>
+    <br />
+    <div title="divTitle">
+        Normal Div
+    </div>
+    <br />
+    <div>
+        Normal Div without any attributes
+    </div>
+</body>
+</html>

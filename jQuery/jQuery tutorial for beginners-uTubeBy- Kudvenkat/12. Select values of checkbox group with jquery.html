@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>12. Select values of checkbox group with jquery</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			
+		});
+
+
+	</script>
+</head>
+<body>
+	Skills:
+	<input type="checkbox" name="skills" value="JavaScript"> JavaScript
+	<input type="checkbox" name="skills" value="jQuery"> jQuery
+	<input type="checkbox" name="skills" value="C#"> C#
+	<input type="checkbox" name="skills" value="VB"> VB
+
+	<br><br>
+
+	Preferred Cities:
+	<input type="checkbox" name="cities" value="NewYork"> NewYork
+	<input type="checkbox" name="cities" value=""> SF
+	<input type="checkbox" name="cities" value=""> Los Angeles
+	<input type="checkbox" name="cities" value=""> Alameda
+
+	<br><br>
+
+	<input id="btnSkills" type="submit" value="Get Selected Skills">
+	<input id="btnCities" type="submit" value="Get Selected Cities">
+
+	<br><br>
+
+	<div id="divResult"></div>
+</body>
+</html>
