@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>July8_HomeWork</title>
+	<style>
+
+		body{
+			width: 700px;
+			margin: auto;
+		}
+
+		#form{
+			padding: 10px;
+			background-color: #EEEEEE;
+			line-height: 30px;
+		}
+
+		label{
+			padding-right: 10px;	
+		}
+
+		input{
+			
+		}
+
+
+	</style>
+</head>
+<body>
+	<div id="main">
+		<p>
+			Create form with input fields that accept only numbers, and those fields should have attribute name, quantity, date, restriction 1 to 20 and password. Also the form should have checkboxes,  form action page and  form submit button.
+		</p>
+
+		<div id="form">
+			<form action="July8_HomeWork_Action.html">
+
+				<fieldset>
+				<legend>Create Account</legend>
+					<fieldset>
+					<legend>Personal Information</legend>
+						<label for="First Name">First Name</label><input type="text">
+						<label for="Last Name">Last Name</label> <input type="text"> <br>
+						<label for="DOB">DOB</label> <input type="date" name="" id=""><br>
+					</fieldset>
+
+					<fieldset>
+					<legend>Create Account</legend>
+						<label for="E-mail">E-mail</label> <input type="text">@gmail.com <br>
+						<label for="Password">Password</label> <input type="password" name="psd" id="">
+						<label for="Re-type Password:">Re-type Password:</label> <input type="password" name="" id="">
+						<input type="button" value="Already got an ID?" onclick="alert('Hell ya!')">
+					</fieldset>
+
+					<fieldset>
+						<legend>Skillset</legend>
+						<input type="checkbox" name="HMTL5" id="">HTML5
+						<input type="checkbox" name="jQuery" id="">jQuery
+						<input type="checkbox" name="JavaScript" id="">JavaScript
+
+						<br>
+						<label for="Experience (in Years)">Experience (in Years)</label> <input type="number" name="" id="" min="4" max="20"><br>
+					</fieldset>
+					<br>
+					<input type="submit" value="Submit">
+				</fieldset>		
+			</form>
+		</div>
+	</div>
+</body>
+</html>
