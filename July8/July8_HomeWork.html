@@ -26,6 +26,14 @@
 
 
 	</style>
+	<link href="SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css">
+	<link href="SpryAssets/SpryValidationCheckbox.css" rel="stylesheet" type="text/css">
+	<link href="SpryAssets/SpryValidationPassword.css" rel="stylesheet" type="text/css">
+	<link href="SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css">
+<script src="SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="SpryAssets/SpryValidationCheckbox.js" type="text/javascript"></script>
+<script src="SpryAssets/SpryValidationPassword.js" type="text/javascript"></script>
+<script src="SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
 </head>
 <body>
 	<div id="main">
@@ -40,26 +48,51 @@
 				<legend>Create Account</legend>
 					<fieldset>
 					<legend>Personal Information</legend>
-						<label for="First Name">First Name</label><input type="text">
-						<label for="Last Name">Last Name</label> <input type="text"> <br>
-						<label for="DOB">DOB</label> <input type="date" name="" id=""><br>
+						<label for="First Name">First Name</label>
+					  <span id="sprytextfield1">
+						<input type="text">
+						<span class="textfieldRequiredMsg">A value is required.</span></span>
+						<label for="Last Name">Last Name</label> <input type="text">
+					  <span id="sprycheckbox1">
+						<input type="checkbox" name="checkbox1" id="checkbox1">
+						<span class="checkboxRequiredMsg">Please make a selection.</span></span> <br>
+						<label for="DOB">DOB</label> <input type="date" name="" id="">
+						<span id="spryselect1">
+						<select name="select1" id="select1">
+					    </select>
+						<span class="selectRequiredMsg">Please select an item.</span></span>					  <span id="sprytextfield2">
+						<input type="text" name="text1" id="text1">
+						<span class="textfieldRequiredMsg">A value is required.</span></span><br>
 					</fieldset>
 
 					<fieldset>
 					<legend>Create Account</legend>
-						<label for="E-mail">E-mail</label> <input type="text">@gmail.com <br>
-						<label for="Password">Password</label> <input type="password" name="psd" id="">
-						<label for="Re-type Password:">Re-type Password:</label> <input type="password" name="" id="">
+						<label for="E-mail">E-mail</label> 
+						<span id="sprytextfield3">
+						<input type="text">
+						<span class="textfieldRequiredMsg">A value is required.</span></span>@gmail.com <br>
+						<label for="Password">Password</label>
+					  <span id="sprypassword1">
+						<input type="password" name="psd" id="psd">
+						<span class="passwordRequiredMsg">A value is required.</span></span>
+						<label for="Re-type Password:">Re-type Password:</label>
+					  <span id="sprypassword2">
+						<input type="password" name="input" id="input">
+						<span class="passwordRequiredMsg">A value is required.</span></span>
 						<input type="button" value="Already got an ID?" onclick="alert('Hell ya!')">
 					</fieldset>
 
 					<fieldset>
 						<legend>Skillset</legend>
-						<input type="checkbox" name="HMTL5" id="">HTML5
-						<input type="checkbox" name="jQuery" id="">jQuery
-						<input type="checkbox" name="JavaScript" id="">JavaScript
-
-						<br>
+						<span id="sprycheckbox2">
+						<input type="checkbox" name="HMTL5" id="HMTL">
+						<span class="checkboxRequiredMsg">Please make a selection.</span></span>HTML5
+                        <span id="sprycheckbox3">
+                        <input type="checkbox" name="jQuery" id="jQuery">
+                        <span class="checkboxRequiredMsg">Please make a selection.</span></span>jQuery
+                        <span id="sprycheckbox4">
+                        <input type="checkbox" name="JavaScript" id="JavaScript">
+                        <span class="checkboxRequiredMsg">Please make a selection.</span></span>JavaScript <br>
 						<label for="Experience (in Years)">Experience (in Years)</label> <input type="number" name="" id="" min="4" max="20"><br>
 					</fieldset>
 					<br>
@@ -68,5 +101,17 @@
 			</form>
 		</div>
 	</div>
+<script type="text/javascript">
+var sprytextfield1 = new Spry.Widget.ValidationTextField("sprytextfield1");
+var sprycheckbox1 = new Spry.Widget.ValidationCheckbox("sprycheckbox1");
+var sprytextfield2 = new Spry.Widget.ValidationTextField("sprytextfield2");
+var sprytextfield3 = new Spry.Widget.ValidationTextField("sprytextfield3");
+var sprypassword1 = new Spry.Widget.ValidationPassword("sprypassword1");
+var sprypassword2 = new Spry.Widget.ValidationPassword("sprypassword2");
+var sprycheckbox2 = new Spry.Widget.ValidationCheckbox("sprycheckbox2");
+var sprycheckbox3 = new Spry.Widget.ValidationCheckbox("sprycheckbox3");
+var sprycheckbox4 = new Spry.Widget.ValidationCheckbox("sprycheckbox4");
+var spryselect1 = new Spry.Widget.ValidationSelect("spryselect1");
+</script>
 </body>
 </html>
