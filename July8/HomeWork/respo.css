@@ -34,14 +34,9 @@ img, object, embed, video {
 	width: 87%;
 	padding-left: 1.5%;
 	padding-right: 1.5%;
+	
 }
-#LayoutDiv1 {
-	clear: both;
-	float: left;
-	margin-left: 0;
-	width: 100%;
-	display: block;
-}
+
 
 /* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
 
@@ -50,14 +45,9 @@ img, object, embed, video {
 	width: 88.2%;
 	padding-left: 0.9%;
 	padding-right: 0.9%;
+	margin-top: 20px;
 }
-#LayoutDiv1 {
-	clear: both;
-	float: left;
-	margin-left: 0;
-	width: 100%;
-	display: block;
-}
+
 }
 
 /* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
@@ -68,13 +58,30 @@ img, object, embed, video {
 	max-width: 1232px;
 	padding-left: 0.5%;
 	padding-right: 0.5%;
-	margin: auto;
+	margin-top: 40px;
 }
-#LayoutDiv1 {
-	clear: both;
-	float: left;
-	margin-left: 0;
-	width: 100%;
-	display: block;
+
 }
+
+#SampleForm {
+	background-color: #FFF;
+	padding: 10px 20px 50px 20px;
+	
+	-webkit-box-shadow: 0px 10px 96px -7px rgba(0,0,0,0.27);
+	-moz-box-shadow: 0px 10px 96px -7px rgba(0,0,0,0.27);
+	box-shadow: 0px 10px 96px -7px rgba(0,0,0,0.27);
+	
+	border-radius: 14px 14px 14px 14px;
+	-moz-border-radius: 14px 14px 14px 14px;
+	-webkit-border-radius: 14px 14px 14px 14px;
+	border: 0px solid #000000;
+}
+body {
+	font-size: 12px;
+	font-style: normal;
+	background-color: #FFF;
+}
+
+#formTitle {
+	text-align: center;
 }

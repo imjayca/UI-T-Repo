@@ -29,16 +29,17 @@ Do the following if you're using your customized build of modernizr (http://www.
 <body>
 <div class="gridContainer clearfix">
   <div id="SampleForm">
-    <h1>SampleForm Creation</h1>
+    <h1 id="formTitle">SampleForm Creation</h1>
     <form action="" method="post">
       <table width="500" border="0" cellspacing="12">
         <tr>
           <td width="97"><label for="textfield">
-            <div align="right">First Name </div>
-            </label></td>
+            <div align="right">First Name 
+              </label>
+            </div></td>
           <td width="20">&nbsp;</td>
           <td width="329"><div align="left">
-              <input name="textfield" type="text" id="textfield" size="50">
+              <input name="firstname" type="text" id="textfield" size="40">
             </div></td>
         </tr>
         <tr>
@@ -48,11 +49,12 @@ Do the following if you're using your customized build of modernizr (http://www.
         </tr>
         <tr>
           <td><label for="textfield2">
-            <div align="right">Last Name: </div>
-            </label></td>
+            <div align="right">Last Name: 
+              </label>
+            </div></td>
           <td>&nbsp;</td>
           <td><div align="left">
-              <input name="textfield2" type="text" id="textfield2" size="50">
+              <input name="lastname" type="text" id="textfield2" size="40">
             </div></td>
         </tr>
         <tr>
@@ -62,11 +64,12 @@ Do the following if you're using your customized build of modernizr (http://www.
         </tr>
         <tr>
           <td><label for="select">
-            <div align="right">Select Country: </div>
-            </label></td>
+            <div align="right">Select Country: 
+              </label>
+            </div></td>
           <td>&nbsp;</td>
           <td><div align="left">
-              <select name="select" id="select">
+              <select name="country" id="select">
                 <option>Choose...</option>
                 <option value="USA">USA</option>
                 <option value="United Kingdom">UK</option>
@@ -110,11 +113,12 @@ Do the following if you're using your customized build of modernizr (http://www.
         </tr>
         <tr>
           <td><label for="textfield3">
-            <div align="right">Date of Birth </div>
-            </label></td>
+            <div align="right">Date of Birth 
+              </label>
+            </div></td>
           <td>&nbsp;</td>
           <td><div align="left">
-              <input name="textfield3" type="date" id="textfield3" size="50">
+              <input name="dateOfbirth" type="date" id="textfield3" size="50">
             </div></td>
         </tr>
         <tr>
@@ -123,12 +127,11 @@ Do the following if you're using your customized build of modernizr (http://www.
           <td><div align="left"></div></td>
         </tr>
         <tr>
-          <td><div align="right">
-              <label for="select2">Income Range</label>
-            </div></td>
+          <td><label for="select2">
+            <div align="right">Income Range</div></td>
           <td>&nbsp;</td>
           <td><div align="left">
-              <select name="select2" id="select2">
+              <select name="IncomeRange" id="select2">
                 <option>Choose...</option>
                 <option value="500-1000">$500-$1000</option>
                 <option value="1000-2000">$1000-$2000</option>
@@ -143,12 +146,11 @@ Do the following if you're using your customized build of modernizr (http://www.
           <td><div align="left"></div></td>
         </tr>
         <tr>
-          <td><div align="right">
-              <label for="textfield4">Email</label>
-            </div></td>
+          <td><label for="textfield4">
+            <div align="right">Email</div></td>
           <td>&nbsp;</td>
           <td><div align="left">
-              <input name="textfield4" type="email" id="textfield4" size="50">
+              <input name="email" type="email" id="textfield4" size="40">
             </div></td>
         </tr>
         <tr>
@@ -157,18 +159,54 @@ Do the following if you're using your customized build of modernizr (http://www.
           <td><div align="left"></div></td>
         </tr>
         <tr>
-          <td><div align="right">
-              <label for="textfield5">Phone</label>
-            </div></td>
+          <td><label for="textfield5">
+          <div align="right">Phone</div></td>
           <td>&nbsp;</td>
           <td><div align="left">
-              <input name="textfield5" type="tel" id="textfield5" size="50">
+              <input name="phone" type="tel" id="textfield5" maxlength="12" size="40">
             </div></td>
         </tr>
         <tr>
           <td><div align="right"></div></td>
           <td>&nbsp;</td>
-          <td><div align="left"></div></td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td><p align="right">
+              <label>Skill Sets</label>
+            </p>          </td>
+          <td>&nbsp;</td>
+          <td><div align="left">
+            <label>
+              <input type="checkbox" checked="checked" name="Skill Sets" value="checkbox" id="SkillSets_0">
+              HTML</label>
+            <br>
+            <label>
+              <input type="checkbox" name="Skill Sets" value="checkbox" id="SkillSets_1">
+              CSS</label>
+            <br>
+            <label>
+              <input type="checkbox" name="Skill Sets" value="checkbox" id="SkillSets_2">
+              JavaScript</label>
+            <br>
+            <label>
+              <input type="checkbox" name="Skill Sets" value="checkbox" id="SkillSets_3">
+              jQuery</label>
+          </div></td>
+        </tr>
+        <tr>
+          <td><div align="right"></div></td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td><label for="textfield6">
+            <div align="right">Experience (Yrs.)</div>
+          </label>          </td>
+          <td>&nbsp;</td>
+          <td><div align="left">
+            <input type="number" step="2" name="experience" id="textfield6" size="40">
+          </div></td>
         </tr>
         <tr>
           <td><div align="right"></div></td>
@@ -176,9 +214,13 @@ Do the following if you're using your customized build of modernizr (http://www.
           <td><div align="left"></div></td>
         </tr>
         <tr>
-          <td><div align="right"></div></td>
+          <td><label for="textfield7">
+            <div align="right">Website (if any):</div>
+          </label>          </td>
           <td>&nbsp;</td>
-          <td><div align="left"></div></td>
+          <td><div align="left">
+            <input type="URL" placeholder="Type you website address" name="website" size="40" id="textfield7">
+          </div></td>
         </tr>
         <tr>
           <td><div align="right"></div></td>
@@ -186,9 +228,21 @@ Do the following if you're using your customized build of modernizr (http://www.
           <td><div align="left"></div></td>
         </tr>
         <tr>
+          <td><label for="textarea">
+            <div align="right">Comments</div>
+          </label></td>
+          <td>&nbsp;</td>
+          <td><textarea name="comment" cols="41" id="textarea" placeholder="Type here..."></textarea></td>
+        </tr>
+        <tr>
           <td><div align="right"></div></td>
           <td>&nbsp;</td>
-          <td><div align="left"></div></td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td><div align="right"></div></td>
+          <td>&nbsp;</td>
+          <td><input type="submit" name="submit" id="submit" value="Submit">            <input type="submit" name="Reset" id="Reset" value="Reset"></td>
         </tr>
       </table>
     </form>
