@@ -1,7 +1,7 @@
-@charset "UTF-8";
+@charset "utf-8";
 body {
 	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
-	background-color: #42413C;
+	background-color: #E3E3E1;
 	margin: 0;
 	padding: 0;
 	color: #000;
@@ -16,6 +16,7 @@ h1, h2, h3, h4, h5, h6, p {
 	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
 	padding-right: 15px;
 	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	font-family: Verdana, Geneva, sans-serif;
 }
 a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
 	border: none;
@@ -38,6 +39,7 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	width: 960px;
 	background-color: #FFF;
 	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+	
 }
 
 /* ~~ This is the layout information. ~~ 
@@ -46,8 +48,7 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 
 */
 .content {
-
-	padding: 10px 0;
+	padding: 10px 20px 50px 20px;
 }
 
 /* ~~ miscellaneous float/clear classes ~~ */
