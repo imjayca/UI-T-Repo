@@ -11,30 +11,23 @@ body{
 	padding: 30px;
 }
 
-p{
+h2[id="fh2"]{
+	font-size: 50px;
+}
+
+h2[id="sh2"]{
+	font-size: 20px;
 	color: red;
-	background-color: #FFF38F;
 }
 
-#blue{
-	color: blue;
-	background: none;
-	border: 1px solid #000000;
-	padding: 5px;
+h2[id="sh2"]::after{
+	content: "- RememberThis!"
 }
 
-#red{
-	color: #000000;
-	background: none;
-	font-size: 25px;
-	font-family: helvetica, Arial, Verdana;
+p:first-child{
+	background-color: yellow;
 }
 
-#hblue{
-	color: blue;
-	font-size: 60px;
-}
-
-.hsecond{
-	font-size: 40px;
+p:nth-child(2){
+	background-color: #FF0000;
 }
