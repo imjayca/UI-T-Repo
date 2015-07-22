@@ -1,0 +1,3 @@
+function myFunction() {
+    document.getElementById("demo").innerHTML = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis ut at, maiores voluptatem ea neque et laborum repellendus earum obcaecati quidem quasi numquam dolorem officiis in reprehenderit. Quae, quod! Illum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, reprehenderit labore repudiandae? Provident perspiciatis excepturi, sequi incidunt accusantium expedita hic, distinctio, autem veniam natus perferendis voluptas optio iusto atque harum! <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus iste, enim error id dolorum quaerat nisi voluptates fuga totam cum natus nostrum blanditiis recusandae sequi cupiditate, sed, ab nulla inventore.";
+}

@@ -1,0 +1,20 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+h1{
+	font-family: helvetica;
+}
+
+#mainWrapper{
+	background-color: #F5F5F5;
+	padding: 20px;
+}
+
+#sampleDiv{
+	width: 500px;
+	height: auto;
+	background-color: #FFEA00;
+	padding: 15px;
+}

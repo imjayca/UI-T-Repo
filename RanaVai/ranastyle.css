@@ -1,0 +1,40 @@
+body{
+	background-color: #FAFFAB;
+	text-align: center;
+}
+
+.container{
+	width: 500px;
+	height: auto;
+	margin: auto;
+	background-color: #FFFFFF;
+	padding: 30px;
+}
+
+p{
+	color: red;
+	background-color: #FFF38F;
+}
+
+#blue{
+	color: blue;
+	background: none;
+	border: 1px solid #000000;
+	padding: 5px;
+}
+
+#red{
+	color: #000000;
+	background: none;
+	font-size: 25px;
+	font-family: helvetica, Arial, Verdana;
+}
+
+#hblue{
+	color: blue;
+	font-size: 60px;
+}
+
+.hsecond{
+	font-size: 40px;
+}
